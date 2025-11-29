@@ -1,0 +1,133 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: #f6f6f6;
+  color: #333;
+}
+.header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #0d3b66; /* azul escuro */
+  color: white;
+}
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.nav {
+  display: flex;
+  gap: 3rem;
+}
+.nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+.nav a:hover {
+  color: yellow;
+  text-decoration: none;
+}
+.search-box {
+  display: flex;
+  gap: 0.5rem;
+}
+.search-box input {
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+}
+.search-box button {
+  background-color: #f4d35e;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.banner {
+  text-align: center;
+  background-color: #f4d35e;
+  color: #0d3b66;
+  padding: 2rem;
+}
+.banner h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.categorias {
+  text-align: center;
+  padding: 2em;
+}
+.categorias-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-top: 1rem;
+}
+.categorias-grid button {
+  background-color: #0d3b66;
+  color: white;
+  padding: none;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.categorias-grid button:hover {
+  background-color: #f4d35e;
+  color: #0d3b66;
+}
+.produto {
+  padding: 2rem;
+}
+.produto-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+.produto-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+}
+.produto-card img {
+  width: 200px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 0.5rem;
+}
+/*.produto-card:hover {
+  transform: translateY(-5px);
+}*/
+.preco {
+  display: block;
+  margin: 0.5rem;
+  font-weight: bold;
+  color: #0d3b66;
+}
+.produto-card button {
+  background-color: #f4d35e;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.footer {
+  background-color: #0d3b66;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  font-size: 16px;
+}
